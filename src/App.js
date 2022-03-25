@@ -1,6 +1,7 @@
 import TodoElement from "./TodoElement";
 import {useState} from "react";
 import background from "./images/banana-g1d33f2aa5_1920.jpg";
+import background2 from "./images/background-g653439c48_1920.jpg";
 
 function App() {
   // const [] erstellt mir direkt eine Liste an Variablen, die sofort benannt werden
@@ -40,7 +41,7 @@ function App() {
 
   return (
     <div style={{ backgroundImage: `url(${background})` }}>
-      <div  className="main-container">
+      <div style={{ backgroundImage: `url(${background2})` }} className="main-container">
         <h1 className="header-text">
           Todo - App
         </h1>
