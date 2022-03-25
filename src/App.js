@@ -39,8 +39,8 @@ function App() {
 
   return (
     <div className="main-container">
-      <h1>
-        Todo-App
+      <h1 className="header-text">
+        Todo - App
       </h1>
       {
         // für jeden Text wird ein Element angelegt
@@ -48,8 +48,10 @@ function App() {
           return <TodoElement todoText={todo} key={index} handleDelete={() => deleteTodoAt(index)} />
         })
       }
-      <button onClick={handleAdd} className="add-button">+</button>
-      <input type="text" value={newTodoText} onChange={handleChange} />
+      <div className="add-container">
+        <button onClick={handleAdd} className="add-button">+</button>
+        <input className="eingabefeld" type="text" value={newTodoText} onChange={handleChange} />
+      </div>
     </div>
   )
 }
