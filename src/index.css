@@ -1,9 +1,9 @@
 .main-container{
     padding-top: 5rem;
     padding-left: 4rem;
-    max-width: 1000px;
+    max-width: 800px;
     height: 100vh;
-    margin-left: 30rem;
+    margin: 0 auto;
     background-color: antiquewhite;
 }
 
@@ -76,6 +76,7 @@
 
 body{
     margin: 0;
+    background-image: url("./images/banana-g1d33f2aa5_1920.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
